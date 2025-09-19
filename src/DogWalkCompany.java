@@ -20,17 +20,12 @@ public class DogWalkCompany {
         schedule[hour] = dogs;
         return hour;
     }
-    public DogWalker(int max, DogWalkCompany comp) {
-        maxDogs = max;
-        company = comp;
-    }
-    public int numAvailableDogs(int hour){
+    public int numAvailableDogs(int hour) {
         return schedule[hour];
     }
-    public void updateDogs(int hour, int numberDogsWalked){
+    public void updateDogs(int hour, int numberDogsWalked) {
         schedule[hour] -= numberDogsWalked;
     }
-
 }
 
 
