@@ -26,6 +26,7 @@ public class DogWalkCompany {
     public void updateDogs(int hour, int numberDogsWalked) {
         schedule[hour] -= numberDogsWalked;
     }
+
 }
 
 
