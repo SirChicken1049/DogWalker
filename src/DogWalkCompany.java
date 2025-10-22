@@ -1,16 +1,24 @@
+import java.io.FileNotFoundException;
 import java.util.Scanner;
+import java.io.File;
 
 public class DogWalkCompany {
     private int[] schedule;
     public DogWalkCompany() {
+
         schedule = new int[24];
+    }
+    public DogWalkCompany(int[] schedule) {
+        this.schedule = schedule;
     }
     public String toString() {
         String s = "";
-        for (int i = 0; i < schedule.length; i++)
+        for (int i = 0; i < schedule.length; i++) {
             s += i + " " + schedule[i] + "\n";
+        }
         return s;
     }
+
     public int addDogs(){
         Scanner s = new Scanner(System.in);
         System.out.println("What hour?");
