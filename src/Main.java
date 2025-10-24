@@ -13,9 +13,9 @@ public class Main {
             int[] dogs = new int[24];
             for (int i = 0; i < dogs.length; i++) {
                 dogs[i] = s.nextInt();
-                companies[index] = new DogWalkCompany(dogs);
-                index++;
             }
+            companies[index] = new DogWalkCompany(dogs);
+            index++;
         }
         DogWalker[] walkers = new DogWalker[(int)Math.pow(10,4)];
         f = new File("Walkers.txt");
